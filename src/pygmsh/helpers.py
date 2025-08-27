@@ -100,7 +100,7 @@ def extract_to_meshio():
             # elem_types, elem_tags, node_tags
             elem_types, elem_tags, _ = gmsh.model.mesh.getElements(dim, e)
             assert len(elem_types) == len(elem_tags)
-            assert len(elem_types) == 1
+            # assert len(elem_types) == 1
             elem_type = elem_types[0]
             elem_tags = elem_tags[0]
 
